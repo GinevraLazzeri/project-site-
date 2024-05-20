@@ -12,16 +12,17 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # COCKTAIL DRESS
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+[Link to another page](./another-page.html). 
 
 # PAILLETTES & SHORT DRESS
 
 > This is a blockquote following a header.
->
+[Link to another page](./another-page.html).
 > When something is important enough, you do it even if the odds are not in your favor.
 
 # DECORATIVE APPARATUS OF A DRESS
 
+[Link to another page](./another-page.html).
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
