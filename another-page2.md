@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Another page 2
+title: Paillettes & short dress - Methodology
 description: This is just another page
 ---
 
