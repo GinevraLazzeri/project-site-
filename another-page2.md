@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Paillettes & short dress - Methodology
+title: Paillettes & Short Dress - Methodology
 description: This is just another page
 ---
 
