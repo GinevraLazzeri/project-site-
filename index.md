@@ -14,7 +14,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # PAILLETTES & SHORT DRESS
 
-[Link to another page](./another-page.html).
+[Link to another page](./another-page2.html).
 
 
 # DECORATIVE APPARATUS OF A DRESS
