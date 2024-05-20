@@ -10,16 +10,16 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # COCKTAIL DRESS
 
-[Link to another page](./another-page.html). 
+[Cocktail Dress - Methodology](./another-page.html). 
 
 # PAILLETTES & SHORT DRESS
 
-[Link to another page](./another-page2.html).
+[Paillettes & Short Dress - Methodology](./another-page2.html).
 
 
 # DECORATIVE APPARATUS OF A DRESS
 
-[Link to another page](./another-page3.html).
+[Decorative Apparatus of a Dress - Methodology](./another-page3.html).
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
