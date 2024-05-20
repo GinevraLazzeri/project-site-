@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Another page
+title: Cocktail Dress - Methodology
 description: This is just another page
 ---
 
