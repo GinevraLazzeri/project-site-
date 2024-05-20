@@ -19,7 +19,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # DECORATIVE APPARATUS OF A DRESS
 
-[Link to another page](./another-page.html).
+[Link to another page](./another-page3.html).
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
