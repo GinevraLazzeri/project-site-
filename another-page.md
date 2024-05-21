@@ -116,5 +116,50 @@ FILTER(REGEX(?label,  "da cocktail", "i"))
 }
 ``` 
 
+We ran this QUERY to get the number of “da cocktail” dresses present in the class DemoEthnoAnthropologicalHeritage. The result is 0.
+
+``` SPARQL
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+SELECT COUNT(DISTINCT ?clothing) AS ?n
+WHERE { 
+?clothing rdfs:label ?label ; 
+                a arco:DemoEthnoAnthropologicalHeritage .
+
+FILTER(REGEX(?label,  "da cocktail", "i"))
+}
+```
+
+We ran this QUERY to get the number of “da cocktail” dresses present in the class ArchaeologicalProperty. The result is 0.
+
+``` SPARQL
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+SELECT COUNT(DISTINCT ?clothing) AS ?n
+WHERE { 
+?clothing rdfs:label ?label ; 
+                a arco:ArchaeologicalProperty .
+
+FILTER(REGEX(?label,  "da cocktail", "i"))
+}
+```
+
+We noticed that all “da cocktail” dresses are in the HistoricOrArtisticProperty class. To double check this and get the labels, we ran this QUERY. See results [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fclothing+%3Flabel%0D%0AWHERE+%7B%0D%0A%3Fclothing+a+arco%3AHistoricOrArtisticProperty+%3B%0D%0Ardfs%3Alabel+%3Flabel+%0D%0AFILTER%28REGEX%28%3Flabel%2C+%22da+cocktail%22%2C+%22i%22%29%29%0D%0A%7D%0D%0ALIMIT+200%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
+
+``` SPARQL
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?clothing ?label
+WHERE {
+?clothing a arco:HistoricOrArtisticProperty ;
+rdfs:label ?label 
+FILTER(REGEX(?label, "da cocktail", "i"))
+}
+LIMIT 200
+``` 
+
 
 [back](./)
