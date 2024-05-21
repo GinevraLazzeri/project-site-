@@ -44,5 +44,9 @@ As part of the methodology, we used:
 [Drapery and Bow of a Dress - Methodology](./another-page3.html).
 
 
+
+
+
+
 Our project aims at improving the ArCo Knowledge Graph by adding triples that can both provide specifications about a piece of clothing (e.g. da cocktail, abito corto, drappeggio, fiocco…) and create new links between clothes and larger categories (e.g. paillettes). From our results, the project could work on a larger scale. Our propositions are the starting point for possible future developments.
 
