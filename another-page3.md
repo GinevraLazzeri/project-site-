@@ -172,7 +172,7 @@ We asked the same question to Mixtral, but the results were not satisfying, as s
 ![Mixtral_few-shot2](/immagini_markdown/Mixtral_few-shot2.png)
 
 
-This is the final corrected version of the Decorative Apparatus page of our dress.
+This is the final corrected version of the Decorative Apparatus page of our dress :
 
 rdfs:**label** Apparato decorativo 1 del bene culturale 0900750088
 
