@@ -218,9 +218,9 @@ These are the new triples we created: we chose a cocktail dress and a skirt that
 We reused the predicate arco:hasCulturalPropertyCategory because it was already associated with the property value “da cocktail” in the “sartoria sorelle sobrero” dress.
 
 **NEW TRIPLE 1**
-*[https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625](https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625) → Subject (abito) 
-*arco:hasCulturalPropertyCategory → Property / Predicate
-*[https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail](https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail) → Property value / Object ("da cocktail")
+*   [https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625](https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625) → Subject (abito) 
+*   arco:hasCulturalPropertyCategory → Property / Predicate
+*   [https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail](https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail) → Property value / Object ("da cocktail")
 
 **NEW TRIPLE 2**
 [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750218](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750218) → Subject (gonna)
