@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Another page 3
-description: This is just another page
+title: Drapery & Bow in a Dress
+description: New Triple 5, 6 & 7
 ---
 
-## Welcome to another page
+## Methodology
 
-_yay_
+
 
 [back](./)
