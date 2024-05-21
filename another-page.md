@@ -7,5 +7,9 @@ description: This is just another page
 ## Welcome to another page
 
 _yay_
+We started our project by browsing different **ArCo's ontologies**. We chose the “Clothing Description Ontology” as the main subject of our work. 
+We used **Wikidata** to discover the different types of clothing (ex. vestito da sera, vestito da ballo, abito da cocktail...).
+
+We then asked an LLM (**ChatGPT**) to create a SPARQL query to find “various typologies of dresses on Wikidata”. As a prompt engineering technique, we used *Chain-of-Thought* (i.e. Chain-of-Thought + Zero-shot):
 
 [back](./)
