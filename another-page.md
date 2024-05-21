@@ -171,6 +171,8 @@ FILTER(?label = "da cocktail")
 LIMIT 100
 ```  
 
+Running this QUERY we only find two results: "Cultural Property Specification" class (referred only to one resource "bastoncino da cocktail") and "Cultural Property Category" class (referred to one resouce "abito da cocktail - Sartoria Sorelle Sobrero").
+
 We ran this QUERY to both double-check and retrieve the only dress associated with the property value “da cocktail” with an IRI. See results [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0APREFIX+a-cd%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcontext-description%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fclothing+%3Flabel+%3FauthorName%0D%0AWHERE+%7B+%0D%0A%3Fclothing+rdfs%3Alabel+%3Flabel+%3B%0D%0A+++++++++++++++a-cd%3AhasAuthor+%3Fauthor+.%0D%0A%3Fauthor++rdfs%3Alabel+%3FauthorName%0D%0A++++++++++++++++%0D%0AFILTER%28REGEX%28%3Flabel%2C+%22cocktail%22%2C+%22i%22%29%29%0D%0AFILTER%28REGEX%28%3FauthorName%2C+%22sartoria+sorelle+sobrero%22%2C+%22i%22%29%29%0D%0A%7D%0D%0ALIMIT+20%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on).
 
 ``` SPARQL
