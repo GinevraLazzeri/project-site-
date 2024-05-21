@@ -43,7 +43,7 @@ As part of the methodology, we used:
 [Paillettes & Short Dress - Methodology](./another-page2.html).
 
 
-# DECORATIVE APPARATUS OF A DRESS
+# DRAPERY AND BOW OF A DRESS
 
 [Decorative Apparatus of a Dress - Methodology](./another-page3.html).
 ```js
