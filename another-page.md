@@ -53,6 +53,7 @@ Following this remark, we decided to work with the _Ontology Clothing Descriptio
 _ex._ A dress has the description "cocktail dress" but on the page it is not possible to find an IRI associated with that dress that places it under the property value "cocktail dress". 
 
 Therefore, having new triples to create as goal, we suggest the following new triple:
+
 That dress (subject) - belongs to the class (predicate) - cocktail dress (object) 
 
 We then link the subject to an IRI so that by performing a search I can find that dress in that property value class. 
