@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Cocktail Dress - Methodology
-description: This is just another page
+title: Cocktail Dress 
+description: New Triple 1 & 2
 ---
 
-## Welcome to another page
+## Methodology
 
-_yay_
 We started our project by browsing different **ArCo's ontologies**. We chose the “Clothing Description Ontology” as the main subject of our work. 
 We used **Wikidata** to discover the existing types of clothing on the platform (ex. vestito da sera, vestito da ballo, abito da cocktail...).
 
