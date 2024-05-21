@@ -50,13 +50,7 @@ Looking at these results, we chose the category **'cocktail dress'**. We then sw
 
 Following this remark, we decided to work with the _Ontology Clothing Description_ since clothes generally have many characteristics, but these characteristics do not have a corresponding IRI on ArCo.
 
-e.g. A dress has the description "cocktail dress" but on the page it is not possible to find an IRI associated with that dress that places it under the property value "cocktail dress". 
-
-Therefore, having new triples to create as goal, we suggest the following new triple:
-
-That dress (subject) - belongs to the class (predicate) - cocktail dress (object) 
-
-We then link the subject to an IRI so that by performing a search I can find that dress in that property value class.
+Our goal is to create new triples able to link such clothes to the IRI corresponding to the property value "da cocktail". 
 
 We decided to run QUERY asking if there are any properties with “da cocktail” as a label. True or false? The answer is TRUE.
 
