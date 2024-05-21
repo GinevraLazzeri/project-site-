@@ -56,7 +56,52 @@ Therefore, having new triples to create as goal, we suggest the following new tr
 
 That dress (subject) - belongs to the class (predicate) - cocktail dress (object) 
 
-We then link the subject to an IRI so that by performing a search I can find that dress in that property value class. 
+We then link the subject to an IRI so that by performing a search I can find that dress in that property value class.
+
+We decided to run QUERY asking if there are any properties with “da cocktail” as a label. True or false? The answer is TRUE.
+
+``` SPARQL
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+ASK { 
+?clothing a arco:HistoricOrArtisticProperty ;
+rdfs:label ?label 
+FILTER(REGEX(?label,  "da cocktail", "i"))
+}
+```
+Since we got an affirmative answer, we ran a QUERY to search all the items with “da cocktail” in the label present in the whole ArCo Knowledge Graph.
+
+Since we previously put LIMIT 20, we decided to count how many “da cocktail” items there are on the ArCo KG. We could not get any results since the SPARQL research goes in time out. 
+
+``` SPARQL
+SELECT DISTINCT ?clothing ?label COUNT (DISTINCT ?clothing) AS ?n
+
+WHERE { 
+?clothing rdfs:label ?label 
+FILTER(REGEX(?label,  "da cocktail", "i"))
+}
+```
+
+The query does not work. It goes *time out*.
+
+We then decided to check the number of “da cocktail” dress class by class (looking for “clothing” in the ArCo Ontology), aiming to narrow the field and get clarity. 
+
+We ran this QUERY to get the number of “da cocktail” dresses present in the class HistoricOrArtisticProperty. The result is 52.
+
+``` SPARQL
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+SELECT COUNT(DISTINCT ?clothing) AS ?n
+WHERE { 
+?clothing rdfs:label ?label ; 
+                a arco:HistoricOrArtisticProperty .
+
+FILTER(REGEX(?label,  "da cocktail", "i"))
+}
+``` 
 
 
 [back](./)
