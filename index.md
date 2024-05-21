@@ -10,7 +10,7 @@ Information Technology Skills Project by
 - **Ginevra Lazzeri**, 
 - **Chiara Tartaglia**. 
 
-The focus of the project has been creating new RDF triples regarding the Clothing Description Ontology. 
+The goal of the project has been creating new RDF triples regarding the Clothing Description Ontology to enrich the ArCo Knowledge Graph. 
 As part of the methodology, we used:
 - **SPARQL** query language
 - **ArCo** Knowledge Graph and its Ontologies
