@@ -154,7 +154,7 @@ The two examples of dresses containing the Decorative Apparatus page:
    
 ![App_dec_rosso](/immagini_markdown/App_dec_rosso.png)
 
-3. [sopravveste, da cocktail, femminile di Veneziani Jolanda (terzo quarto sec. XX)](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900750231.html)
+2. [sopravveste, da cocktail, femminile di Veneziani Jolanda (terzo quarto sec. XX)](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900750231.html)
    
 ![App_dec_bianco](/immagini_markdown/App_dec_bianco.png)
 
