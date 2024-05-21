@@ -25,4 +25,24 @@ ORDER BY ?dressTypeLabel
 
 ![ChatGPTCoT1](/immagini_markdown/CoT1.png)
 
+Although the query is already well structured, we have to fix a few errors:
+- instead of giving us the item/object **"dress" (Q200539)**, it gave us that of "280th Infantry Division (Wehrmacht)" (Q220721) which has nothing to do with it;
+- since the clothes/garments on ArCo have property values and descriptions in Italian, we also want to find the labels in Italian in the Wikidata query. For this reason we need to **change the language in the SERVICE tag**: instead of "[AUTO_LANGUAGE],en" we put "it" (= Italian);
+- likewise, we want the language of the variable ?dressTypeDescription to be Italian in the OPTIONAL tag, meaning that we want the dress type description to be in Italian. This is why we need to **change "en" (= english) to "it" (= italian) in the FILTER tag**.
+
+The following is the corrected version of the query to find the elements that are subclasses of “dress” (i.e. the types of dress/garments) with labels in Italian. If present, it also provides their description in Italian (OPTIONAL tag). Everything is ordered alphabetically on the basis of the ?dressTypeLabel:
+
+```SPARQL
+SELECT ?dressType ?dressTypeLabel ?dressTypeDescription
+WHERE {
+?dressType wdt:P279 wd:Q200539.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "it". }
+OPTIONAL { ?dressType schema:description ?dressTypeDescription. FILTER(LANG(?dressTypeDescription) = "it") }
+}
+ORDER BY ?dressTypeLabel
+```
+
+
+
+
 [back](./)
