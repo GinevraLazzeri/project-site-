@@ -5,12 +5,12 @@ layout: default
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 Information Technology Skills Project by 
-**Elena Busà**, 
-**Elena Cinti**, 
-**Gaia Emiliani**, 
-**Jessica Geminiani**, 
-**Ginevra Lazzeri**, 
-**Chiara Tartaglia**. 
+- **Elena Busà**, 
+- **Elena Cinti**, 
+- **Gaia Emiliani**, 
+- **Jessica Geminiani**, 
+- **Ginevra Lazzeri**, 
+- **Chiara Tartaglia**. 
 
 The focus of the project has been creating new RDF triples regarding the Clothing Description Ontology. 
 As part of the methodology, we used:
