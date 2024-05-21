@@ -14,6 +14,7 @@ Chat GPT
 ![ChatGPT_Zero-Shot2](/immagini_markdown/ChatGPT_Zero-Shot2.png)
 
 Gemini
+
 ![Gemini_Zero-Shot1](/immagini_markdown/Gemini_Zero-Shot1.png)
 ![Gemini_Zero-Shot2](/immagini_markdown/Gemini_Zero-Shot2.png)
 
