@@ -81,7 +81,24 @@ WHERE {
 ```
 See results (28) [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0APREFIX+a-dd%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fdenotative-description%2F%3E%0D%0A%0D%0ASELECT+COUNT%28DISTINCT+%3Fclothing%29+AS+%3Fn%0D%0AWHERE+%7B+%0D%0A++%3Fclothing+rdfs%3Alabel+%3Flabel+%3B+%0D%0A++++++++++++a+arco%3AHistoricOrArtisticProperty+.%0D%0A++FILTER%28REGEX%28%3Flabel%2C++%22da+cocktail%22%2C+%22i%22%29%29%0D%0A++%0D%0A++OPTIONAL+%7B+%3Fclothing+a-dd%3AhasIconographicOrDecorativeApparatus+%3Fdec+.+%7D%0D%0A++FILTER%28%21BOUND%28%3Fdec%29%29%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on) 
 
-28 + 24 = 52 > Chat GPT's Query is correct!
+28 + 24 = 52 > Chat GPT's QUERY is correct!
+
+Browsing the list of dresses that do not have an IRI associated with an Iconographic or Decorative Apparatus, we found a dress that had a bow and a drapery in the description but no “fiocco” nor “drappeggio” IRI properties associated with it. 
+
+Following the research we carried out in this section, we created a new triple which links the dress to the Decorative Apparatus property value. The literal we used in the object was invented by us (on the basis of the Decorative Apparatus page of other dresses) as it does not actually exist.
+
+**NEW TRIPLE 5**
+*   [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750088](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750088) → Subject (abito)
+*   a-dd:hasIconographicOrDecorativeApparatus → Predicate
+*   [https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088](https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088)  → Object (LITERAL of the Decorative Apparatus of this dress: **Apparato decorativo 1 del bene culturale 0900750088** ( → code of the dress ).
+
+
+
+
+
+
+
+
 
 
 [back](./)
