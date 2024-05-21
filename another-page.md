@@ -50,7 +50,7 @@ Looking at these results, we chose the category **'cocktail dress'**. We then sw
 
 Following this remark, we decided to work with the _Ontology Clothing Description_ since clothes generally have many characteristics, but these characteristics do not have a corresponding IRI on ArCo.
 
-_ex._ A dress has the description "cocktail dress" but on the page it is not possible to find an IRI associated with that dress that places it under the property value "cocktail dress". 
+e.g. A dress has the description "cocktail dress" but on the page it is not possible to find an IRI associated with that dress that places it under the property value "cocktail dress". 
 
 Therefore, having new triples to create as goal, we suggest the following new triple:
 
