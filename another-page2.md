@@ -52,9 +52,9 @@ LIMIT 20
 As a result, we decided to use this predicate to create the third triple: we associate the same sequined dress we used before both with the predicate hasMaterialOrTechnique and  the property value “paillettes”.
 
 **NEW TRIPLE 3**
-[https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625](https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625) →  Subject (Abito)
-a-dd:hasMaterialOrTechnique → Property / Predicate
-[https://w3id.org/arco/resource/TechnicalCharacteristic/paillettes](https://w3id.org/arco/resource/TechnicalCharacteristic/paillettes) → Property value / Object (Paillettes)
+*   [https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625](https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625) →  Subject (Abito)
+*   a-dd:hasMaterialOrTechnique → Property / Predicate
+*   [https://w3id.org/arco/resource/TechnicalCharacteristic/paillettes](https://w3id.org/arco/resource/TechnicalCharacteristic/paillettes) → Property value / Object (Paillettes)
 
 <img src="https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1070166/ICCD15928135_FTMUBOL46.jpg" alt="abito da cocktail" width="250"/>
 
