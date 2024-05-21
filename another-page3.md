@@ -147,11 +147,14 @@ LIMIT 200
 ```
 
 At this point, we created the complete Decorative Apparatus page of our dress based on the answers we got from **ChatGPT** and **Mixtral** using the *Few-shot technique* providing two examples. 
+
 The two examples of dresses containing the Decorative Apparatus page: 
 1. [abito, da cocktail, femminile - ambito italiano (terzo quarto sec. XX)](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900750229.html)
+   
 ![App_dec_rosso](/immagini_markdown/App_dec_rosso.png)
 
-2. [sopravveste, da cocktail, femminile di Veneziani Jolanda (terzo quarto sec. XX)](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900750231.html)
+3. [sopravveste, da cocktail, femminile di Veneziani Jolanda (terzo quarto sec. XX)](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900750231.html)
+   
 ![App_dec_bianco](/immagini_markdown/App_dec_bianco.png)
 
 
