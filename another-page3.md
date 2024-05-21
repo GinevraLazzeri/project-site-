@@ -128,7 +128,8 @@ We created this next triple following the same reasoning: we linked the same Dec
 *   core:hasType → Predicate
 *   [https://w3id.org/arco/resource/DecorativeApparatusType/fiocco](https://w3id.org/arco/resource/DecorativeApparatusType/fiocco) → Object
 
-The following QUERY is a double-check, it would work if our triple was activated. It now works if we change the word “fiocco” in “ficco” (since the linked resource - our first cocktail dress - has the Property value “ficco”, probably instead of “fiocco”).
+The following QUERY is a double-check, it would work if our triple was activated. It now works if we change the word “fiocco” in “ficco” (since the linked resource - our first cocktail dress - has the Property value “ficco”, probably instead of “fiocco”). See results [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+core%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcore%2F%3E%0D%0APREFIX+a-dd%3A%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fdenotative-description%2F%3E%0D%0APREFIX+dec%3A%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fresource%2FDecorativeApparatusType%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+*%0D%0AWHERE+%7B+%0D%0A%3Fclothing+a-dd%3AhasIconographicOrDecorativeApparatus+%3Fdecorativeapparatus+.%0D%0A%3Fdecorativeapparatus+core%3AhasType+dec%3Aficco%3B%0D%0A%09++++++++++++++++++++++++rdfs%3Alabel+%3FdecLabel+.%0D%0A%7D%0D%0ALIMIT+200%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on) 
+
 
 ```SPARQL
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -158,6 +159,7 @@ The two examples of dresses containing the Decorative Apparatus page:
 ![App_dec_bianco](/immagini_markdown/App_dec_bianco.png)
 
 Prompting Chat GPT
+
 ![ChatGPT_few-shot1](/immagini_markdown/ChatGPT_few-shot1.png)
 ![ChatGPT_few-shot2](/immagini_markdown/ChatGPT_few-shot2.png)
 ![ChatGPT_few-shot3](/immagini_markdown/ChatGPT_few-shot3.png)
