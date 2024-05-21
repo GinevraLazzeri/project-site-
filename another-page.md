@@ -58,7 +58,7 @@ That dress (subject) - belongs to the class (predicate) - cocktail dress (object
 
 We then link the subject to an IRI so that by performing a search I can find that dress in that property value class.
 
-We decided to run QUERY asking if there are any properties with “da cocktail” as a label. True or false? The answer is TRUE.
+We decided to run QUERY asking if there are any properties with “da cocktail” as a label. True or false? The answer is TRUE. See results [at this link](dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+<http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23>%0D%0APREFIX+rdfs%3A+<http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23>%0D%0APREFIX+arco%3A+<https%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F>%0D%0A%0D%0AASK+%7B+%0D%0A%3Fclothing+a+arco%3AHistoricOrArtisticProperty+%3B%0D%0Ardfs%3Alabel+%3Flabel+%0D%0AFILTER%28REGEX%28%3Flabel%2C++"da+cocktail"%2C+"i"%29%29%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
 
 ``` SPARQL
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
