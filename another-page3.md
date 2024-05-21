@@ -92,7 +92,7 @@ Following the research we carried out in this section, we created a new triple w
 *   a-dd:hasIconographicOrDecorativeApparatus → Predicate
 *   [https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088](https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088)  → Object (LITERAL of the Decorative Apparatus of this dress: **Apparato decorativo 1 del bene culturale 0900750088** ( → code of the dress ).
 
-<img src="http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1020284/ICCD11168479_SSPSAEPM%20FI%2024672UC.jpg" style="float:left;margin: 10 px" alt="abito da cocktail" width="250"/> <img src="http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1020284/ICCD11168480_SSPSAEPM%20FI%2024669UC.jpg" style="float:right;margin: 10 px" alt="abito da cocktail" width="250"/>
+<img src="http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1020284/ICCD11168479_SSPSAEPM%20FI%2024672UC.jpg" alt="abito da cocktail" width="250"/> <img src="http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1020284/ICCD11168480_SSPSAEPM%20FI%2024669UC.jpg" alt="abito da cocktail" width="250"/>
 
 
 
