@@ -229,6 +229,7 @@ We reused the predicate arco:hasCulturalPropertyCategory because it was already 
 - arco:hasCulturalPropertyCategory → Property 
 - [https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail](https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail) → Property value ("da cocktail")
 
+<img src="http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1021184/ICCD11171277_SSPSAEPM%20FI%2025347UC.JPG" alt="gonna da cocktail" width="250"/>
 
 
 
