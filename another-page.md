@@ -12,6 +12,18 @@ We used **Wikidata** to discover the existing types of clothing on the platform 
 
 We then asked an LLM (**ChatGPT**) to create a SPARQL query to find “various typologies of dresses on Wikidata”. As a prompt engineering technique, we used *Chain-of-Thought* (i.e. Chain-of-Thought + Zero-shot):
 
-<img src="/immagini_markdown/CoT1.jpg" alt="ChatGPTCoT" width="400"/>
+<img src="/immagini_markdown/CoT1.jpg" alt="ChatGPTCoT1" width="400"/>
+
+```SPARQL
+SELECT ?dressType ?dressTypeLabel ?dressTypeDescription
+WHERE {
+?dressType wdt:P279 wd:Q220721.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+OPTIONAL { ?dressType schema:description ?dressTypeDescription. FILTER(LANG(?dressTypeDescription) = "en") }
+}
+ORDER BY ?dressTypeLabel
+```
+
+<img src="/immagini_markdown/CoT2.jpg" alt="ChatGPTCoT2" width="400"/>
 
 [back](./)
