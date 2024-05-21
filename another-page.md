@@ -42,7 +42,7 @@ OPTIONAL { ?dressType schema:description ?dressTypeDescription. FILTER(LANG(?dre
 ORDER BY ?dressTypeLabel
 ```
 
-Our query produces 93 results. Some of them do not have a literal as a label, but it is not relevant as this query only serves as an inspiration for us to find a type of dress from which to start our searches on ArCo. These below are some of the results produced (among which we also find "cocktail dress"). See results [link](https://w.wiki/A5kR)  
+Our query produces 93 results. Some of them do not have a literal as a label, but it is not relevant as this query only serves as an inspiration for us to find a type of dress from which to start our searches on ArCo. These below are some of the results produced (among which we also find "cocktail dress"). See results [at this link](https://w.wiki/A5kR)  
 
 ![Results_wikidata](/immagini_markdown/Results_wikidata.png)
 
