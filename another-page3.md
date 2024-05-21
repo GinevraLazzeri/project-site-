@@ -115,10 +115,66 @@ LIMIT 20
 
 We created our triple linking the previous Decorative Apparatus to the property value “drappeggio” using the predicate hasType. Indeed, looking at the results of the previous QUERY, “drappeggio” is linked only to “Decorative Apparatus Type”. For this reason, the predicate is “core:hasType”.
 
-NEW TRIPLE 6 
+**NEW TRIPLE 6** 
+*   [https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088](https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088) (See Literal above) → Subject
+*   core:hasType → Predicate
+*   [https://w3id.org/arco/resource/DecorativeApparatusType/1900115134drappeggio](https://w3id.org/arco/resource/DecorativeApparatusType/1900115134drappeggio)  → Object
 
 
+We created this next triple following the same reasoning: we linked the same Decorative Apparatus to the property value “fiocco” using the same predicate (hasType). Actually, we corrected the already existing property value “ficco”.
 
+**NEW TRIPLE 7**
+*   [https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088](https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088)(See Literal above) → Subject
+*   core:hasType → Predicate
+*   [https://w3id.org/arco/resource/DecorativeApparatusType/fiocco](https://w3id.org/arco/resource/DecorativeApparatusType/fiocco) → Object
+
+The following QUERY is a double-check, it would work if our triple was activated. It now works if we change the word “fiocco” in “ficco” (since the linked resource - our first cocktail dress - has the Property value “ficco”, probably instead of “fiocco”).
+
+```SPARQL
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX core: <https://w3id.org/arco/ontology/core/>
+PREFIX a-dd:<https://w3id.org/arco/ontology/denotative-description/>
+PREFIX dec:<https://w3id.org/arco/resource/DecorativeApparatusType/>
+
+SELECT DISTINCT *
+WHERE { 
+?clothing a-dd:hasIconographicOrDecorativeApparatus ?decorativeapparatus .
+?decorativeapparatus core:hasType dec:fiocco;
+	                        rdfs:label ?decLabel .
+}
+LIMIT 200
+```
+
+At this point, we created the complete Decorative Apparatus page of our dress based on the answers we got from **ChatGPT** and **Mixtral** using the *Few-shot technique* providing two examples. 
+The two examples of dresses containing the Decorative Apparatus page: 
+1. [abito, da cocktail, femminile - ambito italiano (terzo quarto sec. XX)](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900750229.html)
+![App_dec_rosso](/immagini_markdown/App_dec_rosso.png)
+
+2. [sopravveste, da cocktail, femminile di Veneziani Jolanda (terzo quarto sec. XX)](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900750231.html)
+![App_dec_bianco](/immagini_markdown/App_dec_bianco.png)
+
+
+![ChatGPT_few-shot1](/immagini_markdown/ChatGPT_few-shot1.png)
+![ChatGPT_few-shot2](/immagini_markdown/ChatGPT_few-shot2.png)
+![ChatGPT_few-shot3](/immagini_markdown/ChatGPT_few-shot3.png)
+![ChatGPT_few-shot4](/immagini_markdown/ChatGPT_few-shot4.png)
+
+ChatGPT’s answer was satisfying regarding the Label, Description and Type sections, whereas the other information it gave us was not relevant. The section “core:hasType” was not provided as it is not associated with the Decorative Apparatus of our dress, so we created it from scratch by combining “drappeggio” and “fiocco”.
+
+We asked the same question to Mixtral, but the results were not satisfying, as seen in the image below.
+
+![Mixtral_few-shot1](/immagini_markdown/Mixtral_few-shot1.png)
+![Mixtral_few-shot2](/immagini_markdown/Mixtral_few-shot2.png)
+
+This is the final corrected version of the Decorative Apparatus page of our dress.
+
+rdfs:**label** Apparato decorativo 1 del bene culturale 0900750088
+core:**description** Abito con gonna leggermente svasata, drappeggio fermato sul centro dietro da fiocco decorativo
+l0:**name** Apparato decorativo 1 del bene culturale 0900750088
+rdf:**type** a-dd:IconographicOrDecorativeApparatus        → Apparato iconografico e decorativo
+core:**hasType** [https://w3id.org/arco/resource/DecorativeApparatusType/fiocco](https://w3id.org/arco/resource/DecorativeApparatusType/fiocco)
+                 [https://w3id.org/arco/resource/DecorativeApparatusType/1900115134drappeggio](https://w3id.org/arco/resource/DecorativeApparatusType/1900115134drappeggio)
 
 
 
