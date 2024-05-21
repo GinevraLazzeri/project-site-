@@ -222,10 +222,12 @@ We reused the predicate arco:hasCulturalPropertyCategory because it was already 
 *   arco:hasCulturalPropertyCategory → Property / Predicate
 *   [https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail](https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail) → Property value / Object ("da cocktail")
 
+<img src="https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/1201385625.html" alt="abito da cocktail" width="250"/>
+
 **NEW TRIPLE 2**
-[https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750218](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750218) → Subject (gonna)
-arco:hasCulturalPropertyCategory → Property 
-[https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail](https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail) → Property value ("da cocktail")
+- [https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750218](https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900750218) → Subject (gonna)
+- arco:hasCulturalPropertyCategory → Property 
+- [https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail](https://w3id.org/arco/resource/CulturalPropertyCategory/da-cocktail) → Property value ("da cocktail")
 
 
 
