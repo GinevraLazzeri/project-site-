@@ -4,9 +4,27 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-There should be whitespace between paragraphs.
+Information Technology Skills Project by Elena Busà, Elena Cinti, Gaia Emiliani, Jessica Geminiani, Ginevra Lazzeri, Chiara Tartaglia. 
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+The focus of the project has been creating new RDF triples regarding the Clothing Description Ontology. 
+As part of the methodology, we used:
+*   SPARQL query language
+*   ArCo Knowledge Graph and its Ontologies
+*   Wikidata Knowledge Graph  
+*   GITHUB to build our website
+*   Large Language Models
+  - Chat GPT 
+  - Gemini
+  - Llama
+  - Mixtral
+*   Prompting techniques
+  - Zero-shot
+  - Few-shot
+  - Chain-of-Thought
+  - Generated Knowledge Prompting  
+
+
+
 
 # COCKTAIL DRESS
 
