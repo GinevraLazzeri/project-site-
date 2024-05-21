@@ -94,10 +94,28 @@ Following the research we carried out in this section, we created a new triple w
 
 <img src="http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1020284/ICCD11168479_SSPSAEPM%20FI%2024672UC.jpg" alt="abito da cocktail" width="250"/> <img src="http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1020284/ICCD11168480_SSPSAEPM%20FI%2024669UC.jpg" alt="abito da cocktail" width="250"/>
 
+We retrieved information from Llama 3 8B using the *Few-shot prompting technique* to find the **property value “drappeggio”**, giving as examples the QUERIES to find the property values “da cocktail” and “paillettes”.
 
+![Llama_Few-Shot](/immagini_markdown/Llama_Few-Shot.png)
 
+This verified that the QUERY provided by Llama works by running it. The results are three items with the property value “drappeggio”. We chose randomly the first one since none of them has any corresponding resource. See results [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fclothing+%3Flabel+%0D%0AWHERE+%7B+%0D%0A%3Fclothing+rdfs%3Alabel+%3Flabel+%0D%0AFILTER%28%3Flabel+%3D+%22drappeggio%22%29%0D%0A%7D%0D%0ALIMIT+20%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on).
 
+```SPARQL
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
 
+SELECT DISTINCT ?clothing ?label 
+WHERE { 
+?clothing rdfs:label ?label 
+FILTER(?label = "drappeggio")
+}
+LIMIT 20
+```
+
+We created our triple linking the previous Decorative Apparatus to the property value “drappeggio” using the predicate hasType. Indeed, looking at the results of the previous QUERY, “drappeggio” is linked only to “Decorative Apparatus Type”. For this reason, the predicate is “core:hasType”.
+
+NEW TRIPLE 6 
 
 
 
