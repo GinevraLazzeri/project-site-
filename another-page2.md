@@ -99,7 +99,7 @@ We explored the associated resources, and among them we found only one which is 
 
 We browsed the Denotative Description Ontology to look for a suitable property and we chose “has Cultural Property Type”, that gave us various results, among which the IRI of the property value “abito corto”. Moreover, browsing the “abito corto” property value, we can see that the only property associated is “has Cultural Property Type”, solidifying our choice. 
 
-This is the QUERY that should be used to find our “abito corto” if our triple was activated, 
+This is the QUERY that should be used to find our “abito corto” if our triple was activated. 
 See results [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+a-dd%3A%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fdenotative-description%2F%3E%0D%0APREFIX+type%3A%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fresource%2FCulturalPropertyType%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+*%0D%0AWHERE+%7B+%0D%0A%3Fclothing+a-dd%3AhasCulturalPropertyType+type%3A2825951733ac23b16160cd06dc1a7e6f+%3B%0D%0A%09rdfs%3Alabel+%3FclothingLabel+.%0D%0A%7D%0D%0ALIMIT+200%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on) 
 
 ```SPARQL
@@ -120,7 +120,7 @@ This is the new triple we created in order to associate the property value “ab
 **NEW TRIPLE 4**
 *   [https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625](https://w3id.org/arco/resource/HistoricOrArtisticProperty/1201385625) → Subject (abito)
 *   a-dd:hasCulturalPropertyType → Property
-*   [https://w3id.org/arco/resource/CulturalPropertyType/2825951733ac23b16160cd06dc1a7e6f] → Property value (abito corto)
+*   [https://w3id.org/arco/resource/CulturalPropertyType/2825951733ac23b16160cd06dc1a7e6f](https://w3id.org/arco/resource/CulturalPropertyType/2825951733ac23b16160cd06dc1a7e6f) → Property value (abito corto)
 
 <img src="https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1070166/ICCD15928135_FTMUBOL46.jpg" alt="abito da cocktail" width="250"/>
 
