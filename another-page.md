@@ -46,5 +46,16 @@ Our query produces 93 results. Some of them do not have a literal as a label, bu
 
 ![Results_wikidata](/immagini_markdown/Results_wikidata.png)
 
+Looking at these results, we chose the category **'cocktail dress'**. We then switched to **ArCo** where we noticed that many of the dresses had the description 'cocktail dress', but on the page it was not possible to find an IRI associated with that dress under the property value 'cocktail dress'.
+
+Following this remark, we decided to work with the _Ontology Clothing Description_ since clothes generally have many characteristics, but these characteristics do not have a corresponding IRI on ArCo.
+
+_ex._ A dress has the description "cocktail dress" but on the page it is not possible to find an IRI associated with that dress that places it under the property value "cocktail dress". 
+
+Therefore, having new triples to create as goal, we suggest the following new triple:
+That dress (subject) - belongs to the class (predicate) - cocktail dress (object) 
+
+We then link the subject to an IRI so that by performing a search I can find that dress in that property value class. 
+
 
 [back](./)
