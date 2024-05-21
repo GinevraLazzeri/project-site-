@@ -20,7 +20,7 @@ As part of the methodology, we used:
 - **GITHUB** to build our website
   
 - **Large Language Models**
-  - Chat GPT 
+  - ChatGPT 
   - Gemini
   - Llama
   - Mixtral
