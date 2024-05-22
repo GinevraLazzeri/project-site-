@@ -32,16 +32,16 @@ As part of the methodology, we used:
 
 # COCKTAIL DRESS
 
-[Cocktail Dress - Methodology](./another-page.html). 
+[Cocktail Dress - Methodology, Results and Analysis](./another-page.html). 
 
 # PAILLETTES & SHORT DRESS
 
-[Paillettes & Short Dress - Methodology](./another-page2.html).
+[Paillettes & Short Dress - Methodology, Results and Analysis](./another-page2.html).
 
 
 # DRAPERY AND BOW OF A DRESS
 
-[Drapery and Bow of a Dress - Methodology](./another-page3.html).
+[Drapery and Bow of a Dress - Methodology, Results and Analysis](./another-page3.html).
 
 
 
