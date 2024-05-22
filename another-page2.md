@@ -4,7 +4,7 @@ title: Paillettes & Short Dress
 description: New Triple 3 & 4
 ---
 
-## Methodology
+## Methodology, Results and Analysis
 
 In the second part of our project, we wanted to see if “paillettes” were a relevant element to work on regarding cocktail dresses. To do so, we retrieved the information from **Llama** (Meta Llama 2 7B > temperature 0.2) using the *Generated Knowledge Prompting technique*.
 ![Llama_Gen1](/immagini_markdown/Llama_Gen1.png)
