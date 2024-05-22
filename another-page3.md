@@ -162,7 +162,7 @@ Prompting Chat GPT
 
 ![ChatGPT_few-shot1](/immagini_markdown/ChatGPT_few-shot1.png)
 ![ChatGPT_few-shot2](/immagini_markdown/ChatGPT_few-shot2.png)
-![ChatGPT_few-shot3](/immagini_markdown/ChatGPT_few-shot3.png)
+![ChatGPT_few-shot3](/immagini_markdown/ChatGPT_few-shot3copia.png)
 ![ChatGPT_few-shot4](/immagini_markdown/ChatGPT_few-shot4.png)
 
 ChatGPT’s answer was satisfying regarding the Label, Description and Type sections, whereas the other information it gave us was not relevant. The section “core:hasType” was not provided as it is not associated with the Decorative Apparatus of our dress, so we created it from scratch by combining “drappeggio” and “fiocco”.
