@@ -25,10 +25,10 @@ ORDER BY ?dressTypeLabel
 
 ![ChatGPTCoT1](/immagini_markdown/CoT1.png)
 
-Although the query is already well structured, we have to fix a few errors:
-- instead of giving us the item/object **"dress" (Q200539)**, it gave us that of "280th Infantry Division (Wehrmacht)" (Q220721) which has nothing to do with it;
-- since the clothes/garments on ArCo have property values and descriptions in Italian, we also want to find the labels in Italian in the Wikidata query. For this reason we need to **change the language in the SERVICE keyword**: instead of "[AUTO_LANGUAGE],en" we put "it" (= Italian);
-- likewise, we want the language of the variable ?dressTypeDescription to be Italian in the OPTIONAL keyword, meaning that we want the dress type description to be in Italian. This is why we need to **change "en" (= english) to "it" (= italian) in the FILTER keyword**.
+Although the query was already well structured, we had to fix a few errors:
+- instead of giving us the item/object **"dress" (Q200539)**, it gave us that of "280th Infantry Division (Wehrmacht)" (Q220721) which had nothing to do with it;
+- since the clothes/garments on ArCo have property values and descriptions in Italian, we also wanted to find the labels in Italian in the Wikidata query. For this reason we needed to **change the language in the SERVICE keyword**: instead of "[AUTO_LANGUAGE],en" we put "it" (= Italian);
+- likewise, we wanted the language of the variable ?dressTypeDescription to be Italian in the OPTIONAL keyword, meaning that we wanted the dress type description to be in Italian. This is why we had to **change "en" (= english) to "it" (= italian) in the FILTER keyword**.
 
 The following is the corrected version of the query to find the elements that are subclasses of “dress” (i.e. the types of dress/garments) with labels in Italian. If present, it also provides their description in Italian (OPTIONAL keyword). Everything is ordered alphabetically on the basis of the ?dressTypeLabel:
 
@@ -42,7 +42,7 @@ OPTIONAL { ?dressType schema:description ?dressTypeDescription. FILTER(LANG(?dre
 ORDER BY ?dressTypeLabel
 ```
 
-Our query produces 93 results. Some of them do not have a literal as a label, but it is not relevant as this query only serves as an inspiration for us to find a type of dress from which to start our searches on ArCo. These below are some of the results produced (among which we also find "cocktail dress"). See results [at this link](https://w.wiki/A5kR)  
+Our query produced 93 results. Some of them do not have a literal as a label, but it is not relevant as this query only serves as an inspiration for us to find a type of dress from which to start our searches on ArCo. These below are some of the results produced (among which we also find "cocktail dress"). See results [at this link](https://w.wiki/A5kR)  
 
 ![Results_wikidata](/immagini_markdown/Results_wikidata.png)
 
@@ -155,7 +155,7 @@ FILTER(REGEX(?label, "da cocktail", "i"))
 LIMIT 200
 ``` 
 
-At this point, we search for the items with the **property value** “da cocktail”. The first one is associated with only one resource, i.e. “abito da cocktail”. The second one is associated with “bastoncino da cocktail”, which is not relevant for us. See results [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%0D%0A%3FclothingProperty+%3Flabel+%0D%0AWHERE+%7B+%0D%0A%3FclothingProperty+rdfs%3Alabel+%3Flabel+%0D%0AFILTER%28%3Flabel+%3D+%22da+cocktail%22%29%0D%0A%7D%0D%0ALIMIT+100%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on).
+At this point, we searched for the items with the **property value** “da cocktail”. The first one is associated with only one resource, i.e. “abito da cocktail”. The second one is associated with “bastoncino da cocktail”, which was not relevant for us. See results [at this link](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%0D%0A%3FclothingProperty+%3Flabel+%0D%0AWHERE+%7B+%0D%0A%3FclothingProperty+rdfs%3Alabel+%3Flabel+%0D%0AFILTER%28%3Flabel+%3D+%22da+cocktail%22%29%0D%0A%7D%0D%0ALIMIT+100%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on).
 
 ``` SPARQL
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
