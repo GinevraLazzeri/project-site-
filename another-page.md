@@ -42,17 +42,17 @@ OPTIONAL { ?dressType schema:description ?dressTypeDescription. FILTER(LANG(?dre
 ORDER BY ?dressTypeLabel
 ```
 
-Our query produced 93 results. Some of them do not have a literal as a label, but it is not relevant as this query only serves as an inspiration for us to find a type of dress from which to start our searches on ArCo. These below are some of the results produced (among which we also find "cocktail dress"). See results [at this link](https://w.wiki/A5kR)  
+Our query produced 93 results. Some of them do not have a literal as a label, but it is not relevant as this query only serves as an inspiration for us to find a type of dress from which to start our searches on ArCo. These below are some of the results produced (among which we also find "abito da cocktail"). See results [at this link](https://w.wiki/A5kR)  
 
 ![Results_wikidata](/immagini_markdown/Results_wikidata.png)
 
-Looking at these results, we chose the category **'cocktail dress'**. We then switched to **ArCo** where we noticed that many of the dresses had the description 'cocktail dress', but on the page it was not possible to find an IRI associated with that dress under the property value 'cocktail dress'.
+Looking at these results, we chose the category **'abito da cocktail'**. We then switched to **ArCo** where we noticed that many of the dresses had the description 'abito da cocktail', but on the page it was not possible to find an IRI associated with that dress under the property value 'abito da cocktail'.
 
 Following this remark, we decided to work with the _Ontology Clothing Description_ since clothes generally have many characteristics, but these characteristics do not have a corresponding IRI on ArCo.
 
 Our goal is to create new triples able to link such clothes to the IRI corresponding to the property value "da cocktail". 
 
-We decided to run QUERY asking if there are any properties with “da cocktail” as a label. True or false? The answer is TRUE.
+We decided to run the QUERY asking if there are any properties with “da cocktail” as a label. True or false? The answer is TRUE.
 
 ``` SPARQL
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
