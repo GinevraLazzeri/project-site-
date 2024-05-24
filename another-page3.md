@@ -4,7 +4,7 @@ title: Drapery & Bow in a Dress
 description: New Triple 5, 6 & 7
 ---
 
-## Methodology, Results and Analysis
+## Methodology, Results & Analysis
 
 In the last part of our project we decided to focus on the decorative apparatus of a new dress. 
 Browsing the Denotative Description ontology, we found the properties “Technical Characteristic” and “Has Iconographic or Decorative Apparatus”. In order to choose the most suitable one, we asked **ChatGPT** and **Gemini** to tell us the differences between the two using the *Zero-shot prompting technique*. 
