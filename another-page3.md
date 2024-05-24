@@ -113,7 +113,7 @@ FILTER(?label = "drappeggio")
 LIMIT 20
 ```
 
-We created our triple linking the previous Decorative Apparatus to the property value “drappeggio” using the predicate hasType. Indeed, looking at the results of the previous QUERY, “drappeggio” is linked only to “Decorative Apparatus Type”. For this reason, the predicate is “core:hasType”.
+We created our triple linking the previous Decorative Apparatus to the property value “drappeggio” using the predicate hasType. Indeed, looking at the results of other Decorative Apparatus, we noticed that “core:hasType” was the most commonly used predicate and also because it avoided repetition which would occur if we used the predicate “Decorative Apparatus Type” instead. For this reason, we opted for “core:hasType”.
 
 **NEW TRIPLE 6** 
 *   [https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088](https://w3id.org/arco/resource/IconographicOrDecorativeApparatus/0900750088) (See Literal above) → Subject
