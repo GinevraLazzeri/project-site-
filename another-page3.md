@@ -168,7 +168,7 @@ Prompting Chat GPT
 ChatGPT’s answer was satisfying regarding the Label, Description and Type sections, whereas the other information it gave us was not relevant. The section “core:hasType” was not provided as it is not associated with the Decorative Apparatus of our dress, so we created it from scratch.
 
 
-We asked the same question to Mixtral, but the results were not satisfying, as seen in the images below.
+We asked Mixtral the same question, but the results were not satisfying, as seen in the images below.
 
 ![Mixtral_few-shot1](/immagini_markdown/Mixtral_few-shot1.png)
 ![Mixtral_few-shot2](/immagini_markdown/Mixtral_few-shot2.png)
