@@ -210,7 +210,7 @@ arco:hasCulturalPropertyCategory c:da-cocktail .
 LIMIT 100
 ```
 
-These are the new triples we created: we chose a cocktail dress and a skirt that did not have the property value “da cocktail” associated with them and we link them to the property value “da cocktail” we have found.
+These are the new triples we created: we chose a cocktail dress and a skirt that did not have the property value “da cocktail” associated with them and we linked them to the property value “da cocktail” we have found.
 We reused the predicate arco:hasCulturalPropertyCategory because it was already associated with the property value “da cocktail” in the “sartoria sorelle sobrero” dress.
 
 **NEW TRIPLE 1**
