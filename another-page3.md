@@ -7,7 +7,7 @@ description: New Triple 5, 6 & 7
 ## Methodology, Results & Analysis
 
 In the last part of our project we decided to focus on the decorative apparatus of a new dress. 
-Browsing the Denotative Description ontology, we found the classes “Technical Characteristic” and “Iconographic or Decorative Apparatus”. In order to choose the most suitable one, we asked **ChatGPT** and **Gemini** to tell us the differences between the two using the *Zero-shot prompting technique*. 
+Browsing the Denotative Description ontology, we found the classes “Technical Characteristic” and “Decorative Apparatus Type" contained in the super-class "Iconographic or Decorative Apparatus”. In order to choose the most suitable one, we asked **ChatGPT** and **Gemini** to tell us the differences between the two using the *Zero-shot prompting technique*. 
 
 Chat GPT
 ![ChatGPT_Zero-Shot1](/immagini_markdown/ChatGPT_Zero-Shot1.png)
