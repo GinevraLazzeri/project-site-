@@ -7,7 +7,7 @@ description: New Triple 5, 6 & 7
 ## Methodology, Results & Analysis
 
 In the last part of our project we decided to focus on the decorative apparatus of a new dress. 
-Browsing the Denotative Description ontology, we found the classes “Technical Characteristic” and “Decorative Apparatus Type" (contained in the super-class "Iconographic or Decorative Apparatus”). In order to choose the most suitable one, we asked **ChatGPT** and **Gemini** to tell us the differences between the two using the *Zero-shot prompting technique*. 
+Browsing the Denotative Description ontology, we found the classes “Technical Characteristic” and “Decorative Apparatus" (having super-class "Iconographic or Decorative Apparatus”). In order to choose the most suitable one, we asked **ChatGPT** and **Gemini** to tell us the differences between the two using the *Zero-shot prompting technique*. 
 
 Chat GPT
 ![ChatGPT_Zero-Shot1](/immagini_markdown/ChatGPT_Zero-Shot1.png)
@@ -18,7 +18,7 @@ Gemini
 ![Gemini_Zero-Shot1](/immagini_markdown/Gemini_Zero-Shot1.png)
 ![Gemini_Zero-Shot2](/immagini_markdown/Gemini_Zero-Shot2.png)
 
-Based on the LLMs results, we opted for Decorative Apparatus Type (sub-class of "Iconographic or Decorative Apparatus”). 
+Based on the LLMs results, we opted for the "Iconographic or Decorative Apparatus” class. 
 We then built a QUERY identifying all the cocktail dresses having an IRI linked to an Iconographic or Decorative Apparatus object and asked **ChatGPT**, with a *Zero-shot prompting technique*, to build a QUERY, based on ours, to find all the cocktail dresses that DO NOT have an IRI linked to an Iconographic or Decorative Apparatus.
 
 ![ChatGPT_decorative1.png](/immagini_markdown/ChatGPT_decorative1.png)
